@@ -6,11 +6,15 @@ public class pokemonWork {
     water pokemon04 = new water(null, 0, 0, 0);
     flying pokemon05 = new flying(null, 0, 0, 0);
 
-    pokemon01.attack();
+    System.out.println(pokemon02.getHp());
+    pokemon03.attack(pokemon02);
+    System.out.println(pokemon02.getHp());
+
+/*     pokemon01.attack();
     pokemon02.attack();
     pokemon03.attack();
     pokemon04.aquatail();
     pokemon05.dragonascend();
-    
+     */
   }
 }

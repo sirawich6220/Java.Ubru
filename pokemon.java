@@ -13,14 +13,28 @@ public class pokemon {
 
   }
 
-  public void attack(){
+  public void attack(pokemon pokemonTarget){
     System.out.println(name+  " attack...");
+    int targetHP = pokemonTarget.getHp();
+    pokemonTarget.setHp(targetHP-getHitpoint());
   }
 
   public void defend() {}
 
   public String getName(){
     return name;
+  }
+
+  public int getHp() {
+    return hp;
+  }
+
+  public void setHp(int hp) {
+    this.hp = hp;
+  }
+
+  public int getHitpoint() {
+    return hitpoint;
   }
  
 }
@@ -34,8 +48,10 @@ class electric extends pokemon {
 
   @Override 
 
-  public void attack(){
+  public void attack(pokemon pokemonTarget){
     System.out.println(getName() +" electric ATTACK !!!");
+    int targetHP = pokemonTarget.getHp();
+    pokemonTarget.setHp(targetHP-getHitpoint());
   }
 
 }
