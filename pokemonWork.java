@@ -10,11 +10,5 @@ public class pokemonWork {
     pokemon03.attack(pokemon02);
     System.out.println(pokemon02.getHp());
 
-/*     pokemon01.attack();
-    pokemon02.attack();
-    pokemon03.attack();
-    pokemon04.aquatail();
-    pokemon05.dragonascend();
-     */
   }
 }
